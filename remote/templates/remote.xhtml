@@ -1,0 +1,71 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>IR Remote</title>
+	<meta name="viewport" content="minimum-scale=1.0, width=device-width, maximum-scale=1.6, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="YES" />
+	<style type="text/css">
+		svg {
+			stroke: #797979;
+			stroke-opacity: 1;
+			fill-opacity: 1;
+		}
+		text {
+			font-family: sans-serif;
+			fill: #797979;
+			font-size: 100%;
+		}
+		text.volume {
+			font-size: 200%;
+		}
+		text.playback {
+			font-size: 150%;
+		}
+		circle {
+			stroke-width: 3px;
+			fill: #ffffff;
+		}
+		circle.control {
+			fill: #f8f8f8;
+		}
+	</style>
+</head>
+<body>
+<svg id="svgroot" width="300px" height="380px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<circle  class="control" fill="#f8f8f8" r="22%" cy="25%" cx="50%"/>
+	
+	<a xlink:href="./up">
+		<text class="volume" y="13.5%" x="47%">+</text>
+	</a>
+	
+	<a xlink:href="./down">
+		<text class="volume" y="41%" x="47%">–</text>
+	</a>
+	
+	<a xlink:href="./left">
+		<text class="playback" y="26.5%" x="27.5%">|</text>
+		<text class="playback" y="26%" x="28%">&lt;&lt;</text>
+	</a>
+	
+	<a xlink:href="./right">
+		<text class="playback" y="26%" x="64%">&gt;&gt;</text>
+		<text class="playback" y="26.5%" x="72.5%">|</text>
+	</a>
+	
+	<a xlink:href="./menu">
+		<circle  id="svg_4" r="10%"  cy="25%" cx="50%"/>
+		<text class="playback" y="27%" x="45%">&gt;</text>
+		<text class="playback" y="27.5%" x="51%">||</text>
+	</a>
+
+	<a xlink:href="./back">
+		<circle class="control" r="10%" cy="55%" cx="50%"/>
+		<text y="56.5%" x="42.5%">MENU</text>
+	</a>
+	
+	<a xlink:href="./frontrow">
+		<circle class="control" r="10%" cy="75%" cx="50%"/>
+		<text y="76.5%" x="46%">FR</text>
+	</a>
+</svg>
+</body>
+</html>
